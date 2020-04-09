@@ -1,0 +1,68 @@
+// font-family: 'Pacifico', cursive;
+// font-family: 'Dancing Script', cursive;
+
+body {
+  background-color: #2f4f4f;
+}
+
+.content {
+  margin-top: 30px;
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 1000px;
+  border: 8px solid #8b4513;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+}
+.header-title {
+  padding-top: 20px;
+  color: #8b4513;
+  margin: 0px auto;
+  & h1 {
+    font-size: 75px;
+    display: block;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+  }
+  & h2 {
+    margin-top: 20px;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.header-img-left {
+  & img {
+    max-width: 300px;
+    height: 200px;
+  }
+}
+.header-img-right {
+  & img {
+    max-width: 300px;
+    height: 200px;
+  }
+}
