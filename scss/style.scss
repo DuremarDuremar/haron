@@ -9,7 +9,7 @@ body {
   margin-top: 30px;
   max-width: 1200px;
   margin: 0px auto;
-  height: 1000px;
+  height: 1500px;
   border: 8px solid #8b4513;
   background: -moz-linear-gradient(
     -45deg,
@@ -29,40 +29,11 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
+////////////////////////////////////////
+@import "_header";
+@import "_slider";
+/////////////////////////////////////
 
-header {
-}
-.header-title {
-  padding-top: 20px;
-  color: #8b4513;
-  margin: 0px auto;
-  & h1 {
-    font-size: 75px;
-    display: block;
-    font-family: "Pacifico", cursive;
-    text-align: center;
-  }
-  & h2 {
-    margin-top: 20px;
-    font-family: "Dancing Script", cursive;
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
-.header-img-left {
-  & img {
-    max-width: 300px;
-    height: 200px;
-  }
-}
-.header-img-right {
-  & img {
-    max-width: 300px;
-    height: 200px;
-  }
+.main {
+  margin-top: 40px;
 }
