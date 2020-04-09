@@ -112,7 +112,7 @@ body {
 
 .slider {
   display: block;
-  background-color: #fff;
+  background-color: #a9a9a9;
 }
 
 .slider-wrapper {
@@ -131,10 +131,23 @@ body {
   max-width: 300px;
   max-height: 500px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
-.slider-img img:first-child {
+.img-after {
   padding-right: 5px;
+}
+
+.img-after:hover + .img-before {
+  opacity: 1;
+}
+
+.img-before {
+  opacity: 0.4;
+}
+
+.img-before:hover {
+  opacity: 1;
 }
 
 .main {

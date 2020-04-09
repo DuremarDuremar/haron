@@ -56,7 +56,7 @@
 
 .slider {
   display: block;
-  background-color: #fff;
+  background-color: #a9a9a9;
 }
 .slider-item {
 }
@@ -69,6 +69,7 @@
 
 .slider-img {
   display: flex;
+
   // justify-content: space-evenly;
 }
 
@@ -77,8 +78,20 @@
   max-width: 300px;
   max-height: 500px;
   margin: 0 auto;
-  &:first-child {
-    padding-right: 5px;
+  cursor: pointer;
+}
+
+.img-after {
+  padding-right: 5px;
+
+  &:hover + .img-before {
+    opacity: 1;
+  }
+}
+.img-before {
+  opacity: 0.4;
+  &:hover {
+    opacity: 1;
   }
 }
 
