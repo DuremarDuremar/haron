@@ -39,12 +39,31 @@ body {
 }
 
 .main-tab {
+  margin-top: 20px;
 }
-.tab {
+.tab-nav {
+  background-color: #a9a9a9;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
 }
-.nav {
-}
+
 .nav1 {
+  flex: 33%;
+  border-right: 2px solid black;
+  padding: 20px 10px;
+}
+.nav2 {
+  flex: 33%;
+  border-right: 2px solid black;
+  padding: 20px 10px;
+}
+.nav3 {
+  flex: 33%;
+  padding: 20px 10px;
 }
 .tab-block {
 }

@@ -91,19 +91,27 @@ body {
 .slider .slick-arrow.slick-prev {
   background: url(/img/Feather-core-eye.svg) center no-repeat;
   background-color: #8b4513;
-  background-size: cover;
+  background-size: 80%;
   width: 100%;
   height: 63px;
   border-radius: 60%;
 }
 
+.slider .slick-arrow.slick-prev:hover {
+  background-size: cover;
+}
+
 .slider .slick-arrow.slick-next {
   background: url(/img/Feather-core-eye.svg) center no-repeat;
-  background-size: cover;
+  background-size: 80%;
   width: 100%;
   height: 63px;
   background-color: #8b4513;
   border-radius: 60%;
+}
+
+.slider .slick-arrow.slick-next:hover {
+  background-size: cover;
 }
 
 .slider .slick-dots {
@@ -153,7 +161,7 @@ body {
 }
 
 .img-before {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .img-before:hover {
@@ -162,4 +170,43 @@ body {
 
 .main {
   margin-top: 40px;
+}
+
+.main-tab {
+  margin-top: 20px;
+}
+
+.tab-nav {
+  background-color: #a9a9a9;
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.nav1 {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  border-right: 2px solid black;
+  padding: 20px 10px;
+}
+
+.nav2 {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  border-right: 2px solid black;
+  padding: 20px 10px;
+}
+
+.nav3 {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  padding: 20px 10px;
 }
