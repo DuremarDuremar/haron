@@ -89,17 +89,21 @@ body {
 }
 
 .slider .slick-arrow.slick-prev {
-  background: url(/img/Layerl.png) 10% 0 no-repeat;
+  background: url(/img/Feather-core-eye.svg) center no-repeat;
   background-color: #8b4513;
+  background-size: cover;
   width: 100%;
   height: 63px;
+  border-radius: 60%;
 }
 
 .slider .slick-arrow.slick-next {
-  background: url(/img/Layerr.png) 90% 0 no-repeat;
+  background: url(/img/Feather-core-eye.svg) center no-repeat;
+  background-size: cover;
   width: 100%;
   height: 63px;
   background-color: #8b4513;
+  border-radius: 60%;
 }
 
 .slider .slick-dots {
@@ -111,8 +115,14 @@ body {
 }
 
 .slider {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #a9a9a9;
+  border: 4px solid #8b4513;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider-wrapper {

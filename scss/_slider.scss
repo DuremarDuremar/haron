@@ -28,20 +28,26 @@
 
 .slider .slick-arrow.slick-prev {
   // left: 20%;
-  background: url(/img/Layerl.png) 10% 0 no-repeat;
+  // background: url(/img/Layerl.png) 10% 0 no-repeat;
+  background: url(/img/Feather-core-eye.svg) center no-repeat;
   background-color: #8b4513;
+  background-size: cover;
   width: 100%;
   height: 63px;
+  border-radius: 60%;
 
   // opacity: 0;
 }
 .slider .slick-arrow.slick-next {
   // left: 80%;
-  background: url(/img/Layerr.png) 90% 0 no-repeat;
+  // background: url(/img/Layerr.png) 90% 0 no-repeat;
+  background: url(/img/Feather-core-eye.svg) center no-repeat;
+  background-size: cover;
   // width: 25px;
   width: 100%;
   height: 63px;
   background-color: #8b4513;
+  border-radius: 60%;
 
   // opacity: 0;
 }
@@ -55,8 +61,10 @@
 }
 
 .slider {
-  display: block;
+  display: flex;
   background-color: #a9a9a9;
+  border: 4px solid #8b4513;
+  align-items: center;
 }
 .slider-item {
 }
