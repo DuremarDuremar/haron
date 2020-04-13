@@ -173,12 +173,12 @@ body {
 }
 
 .main-tab {
-  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto 0;
 }
 
 .tab-nav {
   background-color: #a9a9a9;
-  width: 80%;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,25 +188,43 @@ body {
   cursor: pointer;
 }
 
-.nav1 {
+.tabnav {
   -webkit-box-flex: 33%;
       -ms-flex: 33%;
           flex: 33%;
   border-right: 2px solid black;
-  padding: 20px 10px;
 }
 
-.nav2 {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
-  border-right: 2px solid black;
-  padding: 20px 10px;
+.tabnav:last-child {
+  border-right: none;
 }
 
-.nav3 {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
+.tabnav a {
   padding: 20px 10px;
+  display: block;
+  color: black;
+  font-family: "Dancing Script", cursive;
+}
+
+.tab-block {
+  color: #a9a9a9;
+}
+
+.tabblock {
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 20px 20px 0 20px;
+  display: none;
+}
+
+.tabblock:target {
+  display: block;
+}
+
+.activetab {
+  background-color: #696969;
+}
+
+.activetab2 {
+  background-color: green;
 }
