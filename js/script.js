@@ -49,11 +49,6 @@ tabElement.addEventListener("click", function (event) {
     nav2.classList.remove("activetab");
     nav1.classList.remove("activetab");
   }
-  // if (event.target.classList.contains("tab-nav")) {
-  //   tabElement.classList.toggle("activetab");
-  // } else if (event.target.classList.contains("nav2")) {
-  //   tabElement.classList.toggle("activetab2");
-  // }
 });
 
 window.onload = function () {
