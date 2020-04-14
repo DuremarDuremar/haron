@@ -55,5 +55,29 @@ window.onload = function () {
   nav1.click();
 };
 
+/////////////////////////////////////////////////////////////////////////////
+
 let textMovie = document.querySelector(".tab-block2-img p");
 console.log(textMovie);
+
+let start = 0;
+function move() {
+  start = start + 4;
+  textMovie.style.top = start + "px";
+  if (start > 65) {
+    return true;
+  }
+  setTimeout(move, 400);
+  console.log(start);
+}
+
+nav2.onclick = move;
+
+nav1.onclick = function () {
+  start = 0;
+};
+nav3.onclick = function () {
+  start = 0;
+};
+
+/////////////////////////////////////////////////////////////////////////////////////

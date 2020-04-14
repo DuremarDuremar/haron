@@ -129,8 +129,9 @@ a {
     left: 0;
     z-index: 5;
     color: #fff;
-    padding: 120px 20px 20px 30px;
+    padding: 70px 20px 20px 30px;
     font-weight: 900;
     transform: rotateX(15deg);
+    transition: top ease-out 0.5s;
   }
 }
