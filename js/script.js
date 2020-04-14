@@ -54,3 +54,6 @@ tabElement.addEventListener("click", function (event) {
 window.onload = function () {
   nav1.click();
 };
+
+let textMovie = document.querySelector(".tab-block2-img p");
+console.log(textMovie);

@@ -39,12 +39,16 @@ header {
 
 .header-img-left {
   & img {
+    display: block;
+    border-radius: 50px;
     max-width: 300px;
     height: 200px;
   }
 }
 .header-img-right {
   & img {
+    display: block;
+    border-radius: 50px;
     max-width: 300px;
     height: 200px;
   }
