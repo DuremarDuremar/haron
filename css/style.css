@@ -11,7 +11,6 @@ a {
   margin-top: 30px;
   max-width: 1200px;
   margin: 0px auto;
-  height: 1500px;
   border: 8px solid #8b4513;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
@@ -33,7 +32,7 @@ a {
 }
 
 .header-title h1 {
-  font-size: 75px;
+  font-size: 9.5vmax;
   display: block;
   font-family: "Pacifico", cursive;
   text-align: center;
@@ -42,7 +41,7 @@ a {
 .header-title h2 {
   margin-top: 20px;
   font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-size: calc(0.6vmax + 15px);
   text-align: center;
 }
 
@@ -51,7 +50,7 @@ a {
 }
 
 .header-title a button {
-  font-size: 30px;
+  font-size: calc(0.6vmax + 20px);
   color: #8b4513;
   display: block;
   margin: 30px auto 0;
@@ -288,4 +287,87 @@ a {
           transform: rotateX(15deg);
   -webkit-transition: top ease-out 0.5s;
   transition: top ease-out 0.5s;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icon a img {
+  max-width: 25px;
+  display: block;
+}
+
+.contact-text {
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    max-width: 920px;
+  }
+  .header-img-left img {
+    display: block;
+    border-radius: 50px;
+    max-width: 250px;
+    height: 125px;
+  }
+  .header-img-right img {
+    display: block;
+    border-radius: 50px;
+    max-width: 250px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 700px;
+  }
+  .header-img-left img {
+    display: block;
+    border-radius: 50px;
+    max-width: 190px;
+    height: 100px;
+  }
+  .header-img-right img {
+    display: block;
+    border-radius: 50px;
+    max-width: 190px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    max-width: 510px;
+  }
+  .header-img-left img {
+    display: block;
+    border-radius: 50px;
+    max-width: 90px;
+    height: 80px;
+  }
+  .header-img-right img {
+    display: block;
+    border-radius: 50px;
+    max-width: 90px;
+    height: 80px;
+  }
 }

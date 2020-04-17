@@ -1,0 +1,97 @@
+.main {
+  margin-top: 40px;
+}
+
+.main-tab {
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+.tab-nav {
+  background-color: #a9a9a9;
+  margin: 0px auto;
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.tabnav {
+  flex: 33%;
+  border-right: 2px solid black;
+  position: relative;
+  &:last-child {
+    border-right: none;
+  }
+
+  & a {
+    padding: 20px 10px;
+    display: block;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+}
+
+.tab-block {
+  color: #a9a9a9;
+}
+.tabblock {
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 20px;
+  display: none;
+  &:target {
+    display: block;
+    border: 4px solid #8b4513;
+  }
+}
+.activetab {
+  background-color: #696969;
+  color: #fff;
+}
+
+.tab-block-tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-tab {
+}
+
+.tab-block1-img {
+  border: 4px solid #8b4513;
+  width: 350px;
+
+  & img {
+    display: block;
+    max-width: 100%;
+    background-size: cover;
+  }
+}
+
+.tab-block2-img {
+  border: 4px solid #8b4513;
+  background-color: #696969;
+  width: 650px;
+  margin: 20px auto 0;
+  perspective: 400px;
+  position: relative;
+  & img {
+    display: block;
+    max-width: 100%;
+    background-size: cover;
+    transform: rotateX(15deg);
+  }
+  & p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    color: #fff;
+    padding: 70px 20px 20px 30px;
+    font-weight: 900;
+    transform: rotateX(15deg);
+    transition: top ease-out 0.5s;
+  }
+}

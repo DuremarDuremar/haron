@@ -10,7 +10,7 @@ header {
   color: #8b4513;
   margin: 0px auto;
   & h1 {
-    font-size: 75px;
+    font-size: 9.5vmax;
     display: block;
     font-family: "Pacifico", cursive;
     text-align: center;
@@ -18,7 +18,7 @@ header {
   & h2 {
     margin-top: 20px;
     font-family: "Dancing Script", cursive;
-    font-size: 20px;
+    font-size: calc(0.6vmax + 15px);
     text-align: center;
 
     & p {
@@ -27,7 +27,7 @@ header {
   }
   & a {
     & button {
-      font-size: 30px;
+      font-size: calc(0.6vmax + 20px);
       color: #8b4513;
       display: block;
       margin: 30px auto 0;
