@@ -60,13 +60,13 @@
 }
 
 .tab-block1-img {
-  border: 4px solid #8b4513;
   width: 350px;
 
   & img {
     display: block;
     max-width: 100%;
     background-size: cover;
+    border: 4px solid #8b4513;
   }
 }
 
@@ -93,5 +93,6 @@
     font-weight: 900;
     transform: rotateX(15deg);
     transition: top ease-out 0.5s;
+    font-size: 20px;
   }
 }

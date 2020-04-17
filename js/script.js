@@ -61,6 +61,7 @@ let textMovie = document.querySelector(".tab-block2-img p");
 console.log(textMovie);
 
 let start = 0;
+
 function move() {
   start = start + 4;
   textMovie.style.top = start + "px";

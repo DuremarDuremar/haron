@@ -1,0 +1,132 @@
+@media (max-width: 1200px) {
+  .content {
+    max-width: 1140px;
+  }
+  .img-before {
+    opacity: 1;
+  }
+}
+@media (max-width: 992px) {
+  .content {
+    max-width: 920px;
+  }
+  .header-img-left {
+    & img {
+      display: block;
+      border-radius: 50px;
+      max-width: 250px;
+      height: 125px;
+    }
+  }
+  .header-img-right {
+    & img {
+      display: block;
+      border-radius: 50px;
+      max-width: 250px;
+      height: 125px;
+    }
+  }
+  .tab-block2-img {
+    border: 2px solid #8b4513;
+    width: 500px;
+    & p {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    max-width: 700px;
+  }
+  .header-img-left {
+    & img {
+      display: block;
+      border-radius: 50px;
+      max-width: 170px;
+      height: 100px;
+    }
+  }
+  .header-img-right {
+    & img {
+      display: block;
+      border-radius: 50px;
+      max-width: 170px;
+      height: 100px;
+    }
+  }
+  .slider {
+    display: block;
+  }
+  .slider .slick-arrow.slick-prev {
+    background: url(/img/keyboard-left-arrow-button.svg) center no-repeat;
+    background-size: 10%;
+    background-color: #8b4513;
+    width: 50%;
+    height: 33px;
+    border-radius: 0;
+    margin: 0px auto;
+    display: block;
+    &:hover {
+      background-size: 15%;
+    }
+  }
+
+  .slider .slick-arrow.slick-next {
+    background: url(/img/keyboard-right-arrow-button.svg) center no-repeat;
+    background-size: 10%;
+    background-color: #8b4513;
+    width: 50%;
+    height: 33px;
+    border-radius: 0;
+    margin: 0px auto;
+    display: block;
+    &:hover {
+      background-size: 15%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    max-width: 510px;
+  }
+  .header-img-left {
+    & img {
+      display: block;
+      border-radius: 20px;
+      max-width: 90px;
+      height: 80px;
+    }
+  }
+  .header-img-right {
+    & img {
+      display: block;
+      border-radius: 20px;
+      max-width: 90px;
+      height: 80px;
+    }
+  }
+
+  .slider-img img {
+    display: block;
+    max-width: 180px;
+    max-height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .tab-block2-img {
+    border: 2px solid #8b4513;
+    width: 250px;
+    perspective: 0;
+    & img {
+      transform: none;
+    }
+    & p {
+      font-size: 15px;
+      transition: none;
+      transform: none;
+      position: static;
+      padding: 20px;
+    }
+  }
+}
