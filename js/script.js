@@ -26,7 +26,7 @@ $(document).ready(function () {
   });
 });
 
-/////////////////////////
+/////////////////////////выделение вкладки///////////////////////\\\
 
 let nav1 = document.querySelector(".nav1");
 let nav2 = document.querySelector(".nav2");
@@ -55,7 +55,7 @@ window.onload = function () {
   nav1.click();
 };
 
-/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////движение теста в табе///////////////////////////////////////////
 
 let textMovie = document.querySelector(".tab-block2-img p");
 console.log(textMovie);
@@ -82,3 +82,26 @@ nav3.onclick = function () {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
+
+let modalImg = document.querySelectorAll(".slider-img img");
+let modal = document.querySelector(".main-modal");
+let close = document.querySelector(".modal-close");
+
+for (let item of modalImg) {
+  item.onclick = function () {
+    modal.style.display = "flex";
+    item2 = item.cloneNode(true);
+    document.querySelector(".modal-content").appendChild(item2);
+    item2.className = "window";
+  };
+  close.onclick = function () {
+    modal.style.display = "none";
+    document.querySelector(".modal-content").removeChild(item2);
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.querySelector(".modal-content").removeChild(item2);
+    }
+  };
+}

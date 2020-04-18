@@ -16,6 +16,13 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
 }
 
+.window {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +96,6 @@ a {
 
 .slider .slick-arrow {
   position: relative;
-  z-index: 10;
   font-size: 0;
   width: 12px;
   height: 22px;
@@ -437,4 +443,28 @@ footer {
 .contact-text {
   font-size: 15px;
   color: #a9a9a9;
+}
+
+.main-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #aebcbf;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #aebcbf), color-stop(44%, #6e7774), color-stop(81%, #0a0e0a), to(#0a0809));
+  background: linear-gradient(to bottom, #aebcbf 18%, #6e7774 44%, #0a0e0a 81%, #0a0809 100%);
+}
+
+.modal-content {
+  margin: 0px auto;
+  position: relative;
+  border: 5px solid #8b4513;
+}
+
+.modal-close {
+  width: 40px;
+  position: absolute;
+  right: 0;
 }
